@@ -1,0 +1,49 @@
+.contenedor-producto {
+    color: white;
+    background-color: rgb(59, 58, 58);
+    flex: 1 1 28%; /* Ahora las cajas ocupan el 28% del ancho (más ajustado) */
+    height: 550px;
+    padding: 15px; /* Reducido el padding */
+    padding-top: 20px; /* Reducido el padding superior */
+    text-align: center; /*centrado*/
+    margin-top: 30px;
+    display: flex;  /* flexible */
+    flex-direction: column; /*todo en columna */
+    justify-content: space-between;
+    box-sizing: border-box; 
+    min-width: 250px; /*  el contenedor no ser más pequeño que 250px */
+    max-width: 33%; /*  el contenedor no sse hara más grande de un 33% */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+
+.contenedor-producto img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: 250px; /*altuira de la imagen */
+    object-fit: contain; /* Mantiene la forma de la imagen */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+    border-radius: 8px; /* Esquinas redondeadas para las imágenes */
+}
+
+
+.contenedor-producto h2 {
+    font-size: 18px; /* Reducido el tamaño de la fuente para los títulos */
+    margin: 10px 0;
+}
+
+.contenedor-producto p {
+    font-size: 14px; /* Reducido el tamaño de la fuente para los párrafos */
+    margin-bottom: 8px; /* margin de abajo */
+}
+
+.contenedor-producto h1 {
+    font-size: 22px; /* Reducido el tamaño de la fuente para el precio */
+    margin-top: 15px; /*margin de arriba */
+}
+
+
+.contenedor-producto:hover {
+    transform: translateY(-10px); /* movimiento para arriba */
+    box-shadow: 0 7px 12px rgba(216, 211, 211, 0.733); /*sombrita */
+}

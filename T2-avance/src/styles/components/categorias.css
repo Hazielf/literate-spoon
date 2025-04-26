@@ -1,0 +1,38 @@
+.caja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra horizontalmente */
+    justify-content: space-around;
+    /* Distribuye el espacio verticalmente */
+    width: 280px;
+    height: 350px;
+    margin: 30px 40px 0 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #222222;
+    box-shadow: 0 0 40px 0 rgb(26, 25, 25);
+    text-align: center;
+}
+
+.box h2 {
+    margin: 0;
+    /* Eliminamos el margen para mejor control del espacio */
+}
+
+.pc {
+    width: 250px;
+    height: 200px;
+    /* Altura fija para todas las imágenes */
+    object-fit: contain;
+    border-radius: 2%;
+}

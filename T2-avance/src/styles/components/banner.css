@@ -1,0 +1,6 @@
+.baner img {
+    width: 100%;           /*  el ancho  de toda la pagina*/
+    height: 450px;         /* Altura  para el banner  */
+    object-fit: cover;     /*  imagen se ajuste bien sin distorsionarse  */
+    z-index: 1;            /* Mantiene el banner por debajo del menú despegable  */
+}

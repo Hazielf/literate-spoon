@@ -1,0 +1,33 @@
+.banner h1{
+    text-transform:uppercase;
+    color: #ffff;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 15px  15px;
+}
+.banner{
+    align-items: center;
+    text-align: center;
+}
+.container-promo{    
+    flex: 1 1 44%;
+    height: 550px;
+    padding: 10px;
+    padding-top: 20px;
+   align-items: center;
+    display: flex;
+    box-sizing: border-box; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+    
+    
+}
+.container-promo img{
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    
+}
+.container-promo :hover{
+    transform: translateY(-10px); 
+    box-shadow: 0 7px 12px rgba(216, 211, 211, 0.733);
+}

@@ -1,0 +1,12 @@
+@import url('./components/producto.css');
+.tres-productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten al tamaño de la pantalla */
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 30px;
+}
+.final {
+    text-align: center; /* cada contenedor de 3 centrado*/
+
+}

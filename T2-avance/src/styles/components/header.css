@@ -1,0 +1,192 @@
+header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-left .logo img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.header-left h1 {
+    color: #333;
+    font-size: 140px;
+}
+
+
+.search-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.container_busqueda {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 30%;
+}
+
+.container_busqueda input {
+    width: 100%;
+    height: 40px;
+    padding: 0 60px 0 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #222222;
+    font-size: 20px;
+}
+
+.container_busqueda .icon {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background-color: #222222;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.marcar-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    /* Fondo gris oscuro para el contenedor del marcador */
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.marcador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 17px;
+    gap: 10px;
+    list-style: none;
+
+}
+
+.marcador li {
+    box-sizing: border-box;
+    position: relative;
+    flex: 1 1 18%;
+    min-width: 150px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #000080;
+    text-align: center;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.marcador li a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.marcador li:hover {
+    transform: translateY(-5px);
+    background-color: #000046;
+}
+
+.sub-menu {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #333;
+    box-shadow: 0 2px 5 px rgba(0, 0, 0, 0.2);
+}
+
+.sub-menu li {
+    padding: 10px;
+    text-align: left;
+    /*esto hara que el texto se alinie */
+
+}
+
+.sub-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub-menu li.hover {
+    background-color: #444;
+    /*EL CAMBIODE COLOR Cuando el cursor pasa ahi*/
+}
+
+.menu-despegable:hover .sub-menu {
+    display: block;
+}
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container_busqueda input {
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.container_busqueda input:focus {
+    border-color: #0071C5;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 15px rgba(0, 113, 197, 0.3);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

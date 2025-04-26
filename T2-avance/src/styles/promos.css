@@ -1,0 +1,17 @@
+@import url('./components/oferta.css');
+@import url('./components/bannerpromo.css');
+
+h1{
+    text-transform:uppercase;
+    color: #ffff;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 15px  15px;  
+    text-align: center;
+}
+.dos-promociones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px;
+    padding:0px ;
+}
