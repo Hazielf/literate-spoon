@@ -108,7 +108,7 @@ function Mouse() {
         "Iluminación: RGB con 10 modos personalizables",
         "Aceleración Máxima: 20G"
       ],
-      precio: "S/330.00"
+      precio: "S/330"
     },
     {
       id: 10,
@@ -144,7 +144,7 @@ function Mouse() {
         "RGB Rainbow",
         "6 botones programables"
       ],
-      precio: "s/375.00"
+      precio: "s/375"
     }
   ]
 

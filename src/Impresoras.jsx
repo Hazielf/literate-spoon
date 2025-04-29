@@ -132,7 +132,7 @@ function Impresoras() {
         "Registro Fecha/Hora: Registro Fecha/Hora",
         "Conexión Firewire: Conexión Firewire"
       ],
-      precio: "s/630.00"
+      precio: "s/630"
     }
   ]
     return (

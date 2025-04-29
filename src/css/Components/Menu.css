@@ -38,11 +38,15 @@
 }
 
 .dropdown-menu {
+    position: fixed;
+    /* Cambiamos a fixed */
     visibility: hidden;
     z-index: 1000;
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 0;
+    /* Aumentamos el z-index */
+    top: auto;
+    /* Quitamos el top calculado */
+    left: auto;
+    /* Quitamos el left fijo */
     width: 100%;
     min-width: 200px;
     padding: 0.5rem 0;

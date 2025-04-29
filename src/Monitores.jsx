@@ -144,7 +144,7 @@ function Monitores() {
         "Resolución de pantalla: FHD",
         "Número de entradas HDMI: 1"
       ],
-      precio: "s/ 375.00"
+      precio: "s/ 375"
     }
   ]
 
