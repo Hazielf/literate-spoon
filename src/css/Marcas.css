@@ -1,0 +1,109 @@
+.marca {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 50px 30px;
+    overflow: hidden;
+    gap: 40px;
+    color: white;
+    text-align: left;
+}
+
+.contenido {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 25px;
+}
+
+.marca h1 {
+    margin: 0 0 5px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.logo-container {
+    line-height: 0;
+}
+
+.logo-brand {
+    display: block;
+    max-width: 180px;
+    height: auto;
+    margin: auto;
+}
+
+.informacion-container {
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.informacion-container h2 {
+    margin: 0 0 15px 0;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.informacion-container p {
+    margin: 0 0 1em 0;
+    text-align: justify;
+
+}
+
+.informacion-container p:last-of-type {
+    margin-bottom: 0;
+}
+
+.marca-contenido {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    width: 45%;
+    max-width: 650px;
+    gap: 30px;
+}
+
+.video-container iframe {
+    display: block;
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+#acer {
+    background-color: #2D6A4F;
+}
+
+#apple {
+    background-color: #86868B;
+}
+
+#asus {
+    background-color: #010066;
+}
+
+#lenovo {
+    background-color: #881318;
+}
+
+#hp {
+    background-color: #000000;
+}
