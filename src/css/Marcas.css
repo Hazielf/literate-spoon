@@ -11,6 +11,28 @@
     text-align: left;
 }
 
+#acer,
+#apple,
+#asus,
+#lenovo,
+#hp {
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin-bottom: 40px;
+    padding: 30px;
+    padding: 50px 30px;
+    overflow: hidden;
+    gap: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: left;
+}
+
 .contenido {
     display: flex;
     flex-basis: 50%;
@@ -56,7 +78,6 @@
 .informacion-container p {
     margin: 0 0 1em 0;
     text-align: justify;
-
 }
 
 .informacion-container p:last-of-type {

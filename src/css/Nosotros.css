@@ -6,7 +6,7 @@
 
 .about-page {
     flex: 1;
-    background: linear-gradient(135deg, #2D6A4F 0%, #1B4332 100%);
+    background: #000000;
     color: white;
 }
 
@@ -19,7 +19,6 @@
     overflow: hidden;
 }
 
-/* Sección izquierda - Introducción */
 .about-intro {
     display: flex;
     flex-direction: column;
@@ -34,12 +33,10 @@
     font-size: 3.5rem;
     letter-spacing: 3px;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
 }
 
 .about-subtitle {
-    color: #B7E4C7;
     font-weight: 600;
     font-size: 1.8rem;
     text-align: center;
@@ -61,10 +58,6 @@
     transition: transform 0.3s ease;
 }
 
-.about-logo-image:hover {
-    transform: scale(1.05);
-}
-
 .about-description {
     max-width: 600px;
     margin-right: 2.5rem;
@@ -76,13 +69,11 @@
 }
 
 .about-text {
-    color: #E9FAF1;
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: justify;
 }
 
-/* Sección derecha - Valores */
 .about-values {
     width: 45%;
     animation: fadeInRight 1s ease-out;
@@ -106,13 +97,8 @@
     transition: transform 0.3s ease;
 }
 
-.values-image:hover {
-    transform: translateY(-5px);
-}
-
 .values-title {
     margin: 25px 0;
-    color: #B7E4C7;
     font-weight: 700;
     font-size: 2.2rem;
     text-align: center;
@@ -141,12 +127,18 @@
 .section-title {
     display: block;
     margin-bottom: 15px;
-    color: #B7E4C7;
     font-weight: 600;
     font-size: 1.4rem;
 }
 
 .section-text {
-    color: #E9FAF1;
     line-height: 1.8;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
 }
