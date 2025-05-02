@@ -1,6 +1,6 @@
-import "./css/Marcas.css"
+import "./css/Marcas.css";
 
-function SeccionMarca({ marca }) {
+const SeccionMarca = ({ marca }) => {
   const {
     id,
     nombre,
@@ -24,8 +24,8 @@ function SeccionMarca({ marca }) {
         </div>
         <div className="informacion-container">
           <h2>{tituloInfo}</h2>
-          {descripcion.map((parrafo, index) => (
-            <p key={index}>{parrafo}</p>
+          {descripcion.map((texto, index) => (
+            <p key={`${id}-parrafo-${index}`}>{texto}</p>
           ))}
         </div>
       </div>
@@ -53,9 +53,9 @@ function SeccionMarca({ marca }) {
       </div>
     </div>
   );
-}
+};
 
-function Marcas() {
+const Marcas = () => {
   const datosMarcas = [
     {
       id: 'acer',
@@ -87,8 +87,8 @@ function Marcas() {
       logo: '/img/marcas/asus.png',
       tituloInfo: 'Asus: Líder en Tecnología y Innovación en PCs',
       descripcion: [
-        'Asus se ha destacado por incorporar tecnologías de vanguardia en sus productos. Esto incluye pantallas de alta frecuencia de actualización para videojuegos, sistemas avanzados de refrigeración para PC, y procesadores de última generación. Además, Asus ha sido pionera en la creación de portátiles híbridos y ha introducido dispositivos que integran diseño y tecnología en un solo equipo.',
-        'Asus es una empresa taiwanesa reconocida mundialmente como uno de los principales fabricantes de computadoras y componentes tecnológicos. Fundada en 1989, Asus ha revolucionado la industria de la informática con sus productos de alta calidad, innovación constante y un enfoque en ofrecer soluciones tanto para usuarios cotidianos como para profesionales, gamers y entusiastas del hardware.'
+        'Asus se ha destacado por incorporar tecnologías de vanguardia en sus productos. Esto incluye pantallas de alta frecuencia de actualización para videojuegos, sistemas avanzados de refrigeración para PC, y procesadores de última generación.',
+        'Asus es una empresa taiwanesa reconocida mundialmente como uno de los principales fabricantes de computadoras y componentes tecnológicos. Fundada en 1989, Asus ha revolucionado la industria de la informática con sus productos de alta calidad.'
       ],
       video: 'https://www.youtube.com/embed/kwlOAeFLKH0?si=qntrK8JSP9GZD7jT',
       imagen: '/img/marcas/asuspc.png'
@@ -99,8 +99,8 @@ function Marcas() {
       logo: '/img/marcas/hp_logo.png',
       tituloInfo: 'HP (Hewlett-Packard): Innovación y Tecnología de Vanguardia',
       descripcion: [
-        'HP (Hewlett-Packard) es una de las empresas tecnológicas más grandes y reconocidas a nivel mundial, con más de 80 años de historia en la industria. Fundada en 1939 por Bill Hewlett y Dave Packard, HP se ha destacado por sus innovaciones tecnológicas y su capacidad para ofrecer productos confiables en varias áreas, incluyendo computadoras, impresoras y soluciones de software.',
-        'HP se ha comprometido a liderar la industria en innovación tecnológica mientras mantiene un enfoque fuerte en la sostenibilidad. Sus productos están diseñados para ser más ecológicos, con el uso de materiales reciclables y tecnología de bajo consumo'
+        'HP (Hewlett-Packard) es una de las empresas tecnológicas más grandes y reconocidas a nivel mundial, con más de 80 años de historia en la industria. Fundada en 1939 por Bill Hewlett y Dave Packard.',
+        'HP se ha comprometido a liderar la industria en innovación tecnológica mientras mantiene un enfoque fuerte en la sostenibilidad. Sus productos están diseñados para ser más ecológicos.'
       ],
       video: 'https://www.youtube.com/embed/KdB4v9ssdIY',
       imagen: '/img/marcas/hp_laptop.avif'
@@ -111,21 +111,21 @@ function Marcas() {
       logo: '/img/marcas/lenovo.png',
       tituloInfo: 'Lenovo: Innovación para Todos',
       descripcion: [
-        'Lenovo es una empresa multinacional de tecnología que se ha convertido en uno de los mayores fabricantes de computadoras personales del mundo. Con una historia que comenzó en 1984 en China, Lenovo ha crecido hasta convertirse en una marca global que ofrece una amplia gama de productos tecnológicos.',
-        'La compañía es conocida por su innovación continua y su compromiso con la calidad. Lenovo ha revolucionado el mercado de las laptops con su icónica línea ThinkPad, heredada de IBM, y ha expandido su portafolio para incluir tablets, smartphones y soluciones para centros de datos.'
+        'Lenovo es una empresa multinacional de tecnología que se ha convertido en uno de los mayores fabricantes de computadoras personales del mundo. Con una historia que comenzó en 1984 en China.',
+        'La compañía es conocida por su innovación continua y su compromiso con la calidad. Lenovo ha revolucionado el mercado de las laptops con su icónica línea ThinkPad.'
       ],
       video: 'https://www.youtube.com/embed/gVBELZqOOIE?si=jqIWpvOEHUvfQpjZ',
       imagen: '/img/marcas/lenovo2.avif'
     }
   ];
-    return (
-        <main>
-        {datosMarcas.map(marca => (
-            <SeccionMarca key={marca.id} marca={marca} />
-        ))}
-        </main>
-    );
-}
 
+  return (
+    <main>
+      {datosMarcas.map(marca => (
+        <SeccionMarca key={marca.id} marca={marca} />
+      ))}
+    </main>
+  );
+};
 
 export default Marcas;

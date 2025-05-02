@@ -1,6 +1,6 @@
 import "./css/Nosotros.css"
 
-function Nosotros() {    
+const Nosotros = () => {    
   return (
     <main className="about-page">
       <div className="about-container" id="somos">

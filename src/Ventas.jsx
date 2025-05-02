@@ -1,6 +1,6 @@
 import "./css/Ventas.css"
 
-function Ventas(){
+const Ventas = () => {
     return(
         <main>
             <div className="content">
@@ -37,7 +37,8 @@ function Ventas(){
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
+                            title="Google Maps Location"
+                         />
                     </div>
                 </div>
             </div>
@@ -48,6 +49,12 @@ function Ventas(){
                     <source
                         src="./src/audio/hello moto!.mp3"
                         type="audio/mp3"
+                    />
+                    <track
+                        src="./src/audio/hello-moto-captions.vtt"
+                        kind="captions"
+                        srcLang="en"
+                        label="English"
                     />
                 </audio>
             </div>

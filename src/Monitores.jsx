@@ -1,6 +1,6 @@
 import "./css/Productos.css"
 
-function Monitores() {
+const Monitores = () => {
   const monitores = [
     {
       id: 1,
@@ -162,8 +162,8 @@ function Monitores() {
               <h2 className="item-title">{monitor.titulo}</h2>
               
               <div className="item-specs">
-                {monitor.caracteristicas.map((caracteristica, index) => (
-                  <p key={index} className="item-spec">{caracteristica}</p>
+                {monitor.caracteristicas.map((caracteristica) => (
+                  <p key={`${monitor.id}-${caracteristica}`} className="item-spec">{caracteristica}</p>
                 ))}
               </div>
               

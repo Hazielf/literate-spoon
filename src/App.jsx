@@ -4,7 +4,7 @@ import Header from "./Components/Header"
 import Menu from "./Components/Menu"
 import Footer from "./Components/Footer"
 
-import Home from "./home"
+import Home from "./Home"
 import Tablets from "./Tablets"
 import Monitores from "./Monitores"
 import Impresoras from "./Impresoras"

@@ -1,79 +1,63 @@
-.tres-ofertas {
+.promociones-contenedor {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px;
-    gap: 10px;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 3rem;
 }
 
-.container-oferta {
+.promotional-section {
     display: flex;
-    flex: 1 1 24%;
-    align-items: center;
-    height: 400px;
-    padding: 14px;
-    padding-top: 20px;
-
-
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.container-oferta img {
-    width: 100%;
-    height: 450px;
-    object-fit: contain;
-}
-
-.container-oferta :hover {
-    transform: translateY(-10px);
-    box-shadow: 0 7px 12px rgba(58, 56, 56, 0.733);
-}
-
-.banner h1 {
-    margin: 15px 15px;
-    background: rgba(0, 0, 0, 0.6);
-    color: #ffff;
-    text-transform: uppercase;
-}
-
-.banner {
-    align-items: center;
+.section-title {
+    color: #333;
+    font-weight: 600;
+    font-size: 2rem;
     text-align: center;
+    text-transform: capitalize;
 }
 
-.container-promo {
-    box-sizing: border-box;
-    display: flex;
-    flex: 1 1 44%;
-    align-items: center;
-    height: 550px;
-    padding: 10px;
-    padding-top: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.grid-destacadas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
-.container-promo img {
+.grid-ofertas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-especiales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.promo-card {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.promo-image {
     width: 100%;
-    height: 450px;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
 
-.container-promo :hover {
-    transform: translateY(-10px);
-    box-shadow: 0 7px 12px rgba(216, 211, 211, 0.733);
-}
+@media (max-width: 768px) {
 
-h1 {
-    margin: 15px 15px;
-    background: rgba(0, 0, 0, 0.6);
-    color: #ffff;
-    text-align: center;
-    text-transform: uppercase;
-}
+    .grid-destacadas,
+    .grid-ofertas,
+    .grid-especiales {
+        grid-template-columns: 1fr;
+    }
 
-.dos-promociones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0px;
-    gap: 0px;
+    .promotional-section {
+        gap: 1rem;
+    }
 }

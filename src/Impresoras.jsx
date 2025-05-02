@@ -1,6 +1,6 @@
 import "./css/Productos.css"
 
-function Impresoras() {
+const Impresoras = () => {
   const impresoras = [
     {
       id: 1,
@@ -135,32 +135,51 @@ function Impresoras() {
       precio: "s/630"
     }
   ]
+  const ImpresoraCard = ({ impresora }) => {
     return (
-    <main className="items-page">
-        <div className="items-container">
-        <div className="items-grid">
-            {impresoras.map((impresora) => (
-            <div key={impresora.id} className="item-card">
-                <img
-                src={impresora.imagen}
-                alt={impresora.titulo}
-                className="item-image"
-                />
-                <h2 className="item-title">{impresora.titulo}</h2>
-                
-                <div className="item-specs">
-                {impresora.caracteristicas.map((caracteristica, index) => (
-                    <p key={index} className="item-spec">{caracteristica}</p>
-                ))}
-                </div>
-                
-                <h1 className="item-price">{impresora.precio}</h1>
-            </div>
-            ))}
+      <div 
+        key={impresora.id} 
+        className="item-card"
+      >
+        <img
+          src={impresora.imagen}
+          alt={impresora.titulo}
+          className="item-image"
+        />
+        <h2 className="item-title">{impresora.titulo}</h2>
+        <div className="item-specs">
+          {impresora.caracteristicas.map((caracteristica) => {
+            return (
+              <p 
+                key={caracteristica.id} 
+                className="item-spec"
+              >
+                {caracteristica.texto}
+              </p>
+            );
+          })}
         </div>
-        </div>
-    </main>
-    )
-}
+        <h1 className="item-price">{impresora.precio}</h1>
+      </div>
+    );
+  };
 
-export default Impresoras
+  return (
+    <main className="items-page">
+      <div className="items-container">
+        <div className="items-grid">
+          {impresoras.map((impresora) => {
+            return (
+              <ImpresoraCard 
+                key={impresora.id}
+                impresora={impresora} 
+              />
+            );
+          })}
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Impresoras;

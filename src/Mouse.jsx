@@ -1,6 +1,6 @@
 import "./css/Productos.css"
 
-function Mouse() {
+const Mouse = () => {
   const mouses = [
     {
       id: 1,
@@ -162,8 +162,8 @@ function Mouse() {
               <h2 className="item-title">{mouse.titulo}</h2>
               
               <div className="item-specs">
-                {mouse.caracteristicas.map((caracteristica, index) => (
-                  <p key={index} className="item-spec">{caracteristica}</p>
+                {mouse.caracteristicas.map((caracteristica) => (
+                  <p key={`${mouse.id}-${caracteristica}`} className="item-spec">{caracteristica}</p>
                 ))}
               </div>
               
